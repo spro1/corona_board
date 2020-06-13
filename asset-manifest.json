@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/inha_project/static/css/main.dc33f2d5.chunk.css",
+    "main.js": "/inha_project/static/js/main.9ae150ad.chunk.js",
+    "main.js.map": "/inha_project/static/js/main.9ae150ad.chunk.js.map",
+    "runtime-main.js": "/inha_project/static/js/runtime-main.c914b28f.js",
+    "runtime-main.js.map": "/inha_project/static/js/runtime-main.c914b28f.js.map",
+    "static/css/2.1d1a23ac.chunk.css": "/inha_project/static/css/2.1d1a23ac.chunk.css",
+    "static/js/2.f0da482b.chunk.js": "/inha_project/static/js/2.f0da482b.chunk.js",
+    "static/js/2.f0da482b.chunk.js.map": "/inha_project/static/js/2.f0da482b.chunk.js.map",
+    "index.html": "/inha_project/index.html",
+    "precache-manifest.8c6c2596cc7886729e4518bec5e85ef6.js": "/inha_project/precache-manifest.8c6c2596cc7886729e4518bec5e85ef6.js",
+    "service-worker.js": "/inha_project/service-worker.js",
+    "static/css/2.1d1a23ac.chunk.css.map": "/inha_project/static/css/2.1d1a23ac.chunk.css.map",
+    "static/css/main.dc33f2d5.chunk.css.map": "/inha_project/static/css/main.dc33f2d5.chunk.css.map",
+    "static/js/2.f0da482b.chunk.js.LICENSE.txt": "/inha_project/static/js/2.f0da482b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/inha_project/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c914b28f.js",
+    "static/css/2.1d1a23ac.chunk.css",
+    "static/js/2.f0da482b.chunk.js",
+    "static/css/main.dc33f2d5.chunk.css",
+    "static/js/main.9ae150ad.chunk.js"
+  ]
+}
