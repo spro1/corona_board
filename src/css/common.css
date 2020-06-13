@@ -1,0 +1,100 @@
+@font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'TTTogether'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Cafe24Simplehae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+a, a:link, a:hover{
+    text-decoration: none;
+    color: #c6c6c6;
+}
+
+.corona{
+    height: calc(100%);
+    font-family: "MapoPeacefull";
+}
+.corona-header{
+    padding: 0;
+    margin-bottom: 70px;
+}
+.corona-logo{
+    margin-top: 80px;
+    font-family: "TTTogether";
+}
+.corona-logo-desc {
+    font-size: 15px;
+    color: #c6c6c6;
+    font-family: "Cafe24Simplehae";
+}
+
+.corona-box{
+}
+
+.corona-box-desc{
+    font-size: 20px;
+    font-family: "GmarketSansLight";
+    margin-left: 0.8rem;
+}
+
+.corona-box-wrap{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(245,245,245);
+    margin: 0.8rem;
+}
+
+.corona-icon{
+    float: right;
+}
+
+
+/* common */
+html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#root{
+    height: 100%;
+}
+
+.content{
+    height: 100%;
+}
+
+.font-gray{
+    color: #adadad;
+}
+
+.font-white{
+    color: #ffffff;
+}
+
+.font-red{
+    color: red;
+}
+
+.font-green{
+    color: green;
+}
+
+.box-red{
+    background-color: rgb(255,0,0);
+}
+
+.box-green{
+    background-color: rgb(0, 230, 0);
+}
+
+.footer{
+    font-size: 14px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+	padding: 15px 0;
+    margin-top: 20px;
+}

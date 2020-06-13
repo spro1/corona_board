@@ -1,0 +1,91 @@
+import React, {Component} from 'react';
+import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/esm/Row";
+import Col from "react-bootstrap/esm/Col";
+import Logo from "../img/Logo.png";
+import State from "../img/State.png";
+import Confirm from "../img/confirm.png";
+import Cure from "../img/cure.png";
+import Death from "../img/death.png";
+import Isolation from "../img/isolation.png";
+
+function numberFormat(inputNumber) {
+   return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+export default class Main extends Component{
+    constructor(props){
+        super(props);
+    }
+    render() {
+        this.props.KoreaData.confirm = numberFormat(this.props.KoreaData.confirm);
+        this.props.KoreaData.isolation = numberFormat(this.props.KoreaData.isolation);
+        this.props.KoreaData.cure = numberFormat(this.props.KoreaData.cure);
+        this.props.KoreaData.death = numberFormat(this.props.KoreaData.death);
+        this.props.KoreaData.negative = numberFormat(this.props.KoreaData.negative);
+        this.props.KoreaData.complete = numberFormat(this.props.KoreaData.complete);
+        this.props.KoreaData.testing = numberFormat(this.props.KoreaData.testing);
+        return (
+            <Container className="corona">
+                <Row className="corona-header">
+                        <Col xs={12} md={8} className="corona-logo">
+                            <h1><img src={Logo}/> COVID-19</h1>
+                            <p className="corona-logo-desc">COVID-19 국내 현황판 (source : <a href="http://ncov.mohw.go.kr/">http://ncov.mohw.go.kr/</a>)</p>
+                        </Col>
+                </Row>
+                <Row className="corona-content">
+                    <Col md={12}>
+                        <span className="corona-box-desc"><img src={State}/> 국내 COVID-19 현황판</span>
+                    </Col>
+                    <Col md={6} className="corona-box">
+                        <div className="corona-box-wrap">
+                            <span className="corona-icon"><img src={Confirm}/></span>
+                            <h6 className="font-gray">확진</h6>
+                            <h1 className="font-red">{this.props.KoreaData.confirm}</h1>
+                        </div>
+                    </Col>
+                    <Col md={6} className="corona-box">
+                        <div className="corona-box-wrap">
+                            <span className="corona-icon"><img src={Cure}/></span>
+                            <h6 className="font-gray">완치</h6>
+                            <h1 className="font-green">{this.props.KoreaData.cure}</h1>
+                        </div>
+                    </Col>
+                    <Col md={6} className="corona-box">
+                        <div className="corona-box-wrap">
+                            <span className="corona-icon"><img src={Isolation}/></span>
+                            <h6 className="font-gray">격리</h6>
+                            <h1>{this.props.KoreaData.isolation}</h1>
+                        </div>
+                    </Col>
+                    <Col md={6} className="corona-box">
+                        <div className="corona-box-wrap">
+                            <span className="corona-icon"><img src={Death}/></span>
+                            <h6 className="font-gray">사망</h6>
+                            <h1 className="font-red">{this.props.KoreaData.death}</h1>
+                        </div>
+                    </Col>
+
+                    <Col md={4} className="corona-box">
+                        <div className="corona-box-wrap">
+                            <h6 className="font-gray">누적 검사수</h6>
+                            <h4>{this.props.KoreaData.complete}</h4>
+                        </div>
+                    </Col>
+                    <Col md={4} className="corona-box">
+                        <div className="corona-box-wrap">
+                            <h6 className="font-gray">음성</h6>
+                            <h4>{this.props.KoreaData.negative}</h4>
+                        </div>
+                    </Col>
+                    <Col md={4} className="corona-box">
+                        <div className="corona-box-wrap">
+                            <h6 className="font-gray">검사중</h6>
+                            <h4>{this.props.KoreaData.testing}</h4>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        )
+    }
+}
