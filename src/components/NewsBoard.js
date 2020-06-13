@@ -17,7 +17,7 @@ export default class Section extends Component{
 
     render() {
         return (
-            <Container className="board-list">
+            <Container className="corona">
                 <hr/>
                 <Row>
                     <Col md={12}>
