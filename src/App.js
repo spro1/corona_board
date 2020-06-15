@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import State from "./components/StateBoard";
 import City from "./components/CityTable";
 import News from "./components/NewsBoard";
-//import CoronaData from "./data/corona";
+import FileData from "./data/corona";
 
 class App extends Component {
 
@@ -23,7 +23,7 @@ class App extends Component {
 
     async componentDidMount() {
         try{
-            const response = await fetch("http://119.207.250.212:8080/corona");
+            const response = await fetch("https://119.207.250.212:8080/corona");
             const json= await response.json();
             this.setState({
                          isLoaded: true,
@@ -36,19 +36,19 @@ class App extends Component {
                  } catch(error){
                     this.setState({
                         isLoaded: false
+                        //CoronaData : FileData,
+                        //NewsData : FileData.news,
+                        //KoreaData : FileData.confirm_status,
+                        //CityData : FileData.city_status,
+                        //Datetime : FileData.datetime
                     })
                  }
     }
 
     render() {
-        let _Main = null;
-        if(this.state.isLoaded){
-            _Main = <State KoreaData={this.state.KoreaData} Update={this.state.Datetime} CoronaData = {this.state.CoronaData}></State>;
-        }
-
         return (
             <div>
-                {_Main}
+                <State KoreaData={this.state.KoreaData} Update={this.state.Datetime} CoronaData = {this.state.CoronaData}></State>
                 <City CityData={this.state.CityData}></City>
                 <News NewsData={this.state.NewsData}></News>
                 <Footer></Footer>
