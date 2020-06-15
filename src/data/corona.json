@@ -8,11 +8,11 @@
 		"complete": "1,084,926",
 		"testing": "20,793",
 		"new_confirm": 37,
-		"per_confrim": 0.31,
+		"per_confirm": 0.31,
 		"new_cure": 12,
 		"per_cure": 0.11,
 		"new_isolation": 25,
-		"per_isoloation": 2.24,
+		"per_isolation": 2.24,
 		"new_death": 0,
 		"per_death": 0.0
 	},
