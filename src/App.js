@@ -35,12 +35,12 @@ class App extends Component {
                      });
                  } catch(error){
                     this.setState({
-                        isLoaded: false
-                        //CoronaData : FileData,
-                        //NewsData : FileData.news,
-                        //KoreaData : FileData.confirm_status,
-                        //CityData : FileData.city_status,
-                        //Datetime : FileData.datetime
+                        isLoaded: false,
+                        CoronaData : FileData,
+                        NewsData : FileData.news,
+                        KoreaData : FileData.confirm_status,
+                        CityData : FileData.city_status,
+                        Datetime : FileData.datetime
                     })
                  }
     }

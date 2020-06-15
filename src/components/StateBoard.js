@@ -24,10 +24,10 @@ export default class Main extends Component{
 
     render() {
         let inc_confirm, inc_cure, inc_iso, inc_death = 0;
-        inc_confirm = this.props.KoreaData.per_confirm.toFixed(2);
-        inc_cure = this.props.KoreaData.per_cure.toFixed(2);
-        inc_iso = this.props.KoreaData.per_isolation.toFixed(2);
-        inc_death = this.props.KoreaData.per_death.toFixed(2);
+        inc_confirm = this.props.KoreaData.per_confirm;
+        inc_cure = this.props.KoreaData.per_cure;
+        inc_iso = this.props.KoreaData.per_isolation;
+        inc_death = this.props.KoreaData.per_death;
 
         var _Rate = null;
          if (inc_death > 0) {
