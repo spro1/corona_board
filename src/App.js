@@ -28,7 +28,7 @@ class App extends Component {
                  (result) => {
                      this.setState({
                          isLoaded: true,
-                        CoronaData : result,
+                         CoronaData : result,
                          NewsData : result.news,
                          KoreaData : result.confirm_status,
                          CityData : result.city_status,

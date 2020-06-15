@@ -12,13 +12,16 @@ import Death from "../img/death.png";
 import Isolation from "../img/isolation.png";
 import Switch from "react-bootstrap/esm/Switch";
 import CoronaJson from "./CoronaJson";
-function numberFormat(inputNumber) {
-   return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+
 
 export default class Main extends Component{
     constructor(props){
         super(props);
+        this.numberFormat = this.numberFormat.bind();
+    }
+
+    numberFormat(inputNumber) {
+        return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     render() {
         let inc_confirm, inc_cure, inc_iso, inc_death = 0;
@@ -33,14 +36,15 @@ export default class Main extends Component{
          } else  if(inc_death <= 0){
              _Rate = <Badge variant="success">{inc_death}% increase</Badge>;
          }
-
-        this.props.KoreaData.confirm = numberFormat(this.props.KoreaData.confirm);
-        this.props.KoreaData.isolation = numberFormat(this.props.KoreaData.isolation);
-        this.props.KoreaData.cure = numberFormat(this.props.KoreaData.cure);
-        this.props.KoreaData.death = numberFormat(this.props.KoreaData.death);
-        this.props.KoreaData.negative = numberFormat(this.props.KoreaData.negative);
-        this.props.KoreaData.complete = numberFormat(this.props.KoreaData.complete);
-        this.props.KoreaData.testing = numberFormat(this.props.KoreaData.testing);
+        if (this.props.KoreaData!=null) {
+            this.props.KoreaData.confirm = this.numberFormat(this.props.KoreaData.confirm);
+            this.props.KoreaData.isolation = this.numberFormat(this.props.KoreaData.isolation);
+            this.props.KoreaData.cure = this.numberFormat(this.props.KoreaData.cure);
+            this.props.KoreaData.death = this.numberFormat(this.props.KoreaData.death);
+            this.props.KoreaData.negative = this.numberFormat(this.props.KoreaData.negative);
+            this.props.KoreaData.complete = this.numberFormat(this.props.KoreaData.complete);
+            this.props.KoreaData.testing = this.numberFormat(this.props.KoreaData.testing);
+        }
 
         console.log(this.props.CoronaJson);
         return (
