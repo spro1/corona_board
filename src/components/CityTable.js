@@ -10,10 +10,7 @@ import City from "../img/city.png";
 const columns = [{
     dataField: 'city',
     text: '도시명',
-    sort: true,
-    formatter: (cell) => {
-        return cell.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
+    sort: true
 }, {
     dataField: 'confirm',
     text: '확진자',

@@ -24,10 +24,10 @@ export default class Main extends Component{
 
     render() {
         let inc_confirm, inc_cure, inc_iso, inc_death = 0;
-        inc_confirm = ((this.props.KoreaData.new_confirm/(this.props.KoreaData.confirm)) * 100).toFixed(2);
-        inc_cure = ((this.props.KoreaData.new_cure/(this.props.KoreaData.cure)) * 100).toFixed(2);
-        inc_iso = ((this.props.KoreaData.new_isolation/(this.props.KoreaData.isolation)) * 100).toFixed(2);
-        inc_death = ((this.props.KoreaData.new_death/(this.props.KoreaData.death)) * 100).toFixed(2);
+        inc_confirm = this.props.KoreaData.per_confirm.toFixed(2);
+        inc_cure = this.props.KoreaData.per_cure.toFixed(2);
+        inc_iso = this.props.KoreaData.per_isolation.toFixed(2);
+        inc_death = this.props.KoreaData.per_death.toFixed(2);
 
         var _Rate = null;
          if (inc_death > 0) {
@@ -36,13 +36,6 @@ export default class Main extends Component{
              _Rate = <Badge variant="success">{inc_death}% increase</Badge>;
          }
 
-        this.props.KoreaData.confirm = numberFormat(this.props.KoreaData.confirm).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        this.props.KoreaData.isolation = numberFormat(this.props.KoreaData.isolation).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        this.props.KoreaData.cure = numberFormat(this.props.KoreaData.cure).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        this.props.KoreaData.death = numberFormat(this.props.KoreaData.death).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        this.props.KoreaData.negative = numberFormat(this.props.KoreaData.negative).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        this.props.KoreaData.complete = numberFormat(this.props.KoreaData.complete).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        this.props.KoreaData.testing = numberFormat(this.props.KoreaData.testing).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
         console.log(this.props.CoronaJson);
         return (
