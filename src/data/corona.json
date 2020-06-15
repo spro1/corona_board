@@ -1,191 +1,210 @@
 {
 	"confirm_status": {
-		"confirm": 12121,
-		"isolation": 1114,
-		"cure": 10730,
-		"death": 277,
-		"negative": 1072805,
-		"complete": 1084926,
-		"testing": 20793,
+		"confirm": "12,121",
+		"isolation": "1,114",
+		"cure": "10,730",
+		"death": "277",
+		"negative": "1,072,805",
+		"complete": "1,084,926",
+		"testing": "20,793",
 		"new_confirm": 37,
+		"per_confrim": 0.3052553419684845,
 		"new_cure": 12,
+		"per_cure": 0.11183597390493942,
 		"new_isolation": 25,
-		"new_death": 0
+		"per_isoloation": 2.244165170556553,
+		"new_death": 0,
+		"per_death": 0.0
 	},
 	"city_status": [
 		{
 			"city": "합계",
-			"new_confirm_f_d": 13,
-			"new_confirm_f_o": 24,
-			"confirm": 12121,
-			"isolation": 1114,
-			"cure": 10730,
-			"death": 277
+			"new_confirm_f_d": "13",
+			"new_confirm_f_o": "24",
+			"confirm": "12,121",
+			"isolation": "1,114",
+			"cure": "10,730",
+			"death": "277"
 		},
 		{
 			"city": "서울",
-			"new_confirm_f_d": 1,
-			"new_confirm_f_o": 6,
-			"confirm": 1120,
-			"isolation": 427,
-			"cure": 689,
-			"death": 4
+			"new_confirm_f_d": "1",
+			"new_confirm_f_o": "6",
+			"confirm": "1,120",
+			"isolation": "427",
+			"cure": "689",
+			"death": "4"
 		},
 		{
 			"city": "부산",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 147,
-			"isolation": 2,
-			"cure": 142,
-			"death": 3
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "147",
+			"isolation": "2",
+			"cure": "142",
+			"death": "3"
 		},
 		{
 			"city": "대구",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 6894,
-			"isolation": 38,
-			"cure": 6667,
-			"death": 189
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "6,894",
+			"isolation": "38",
+			"cure": "6,667",
+			"death": "189"
 		},
 		{
 			"city": "인천",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 8,
-			"confirm": 318,
-			"isolation": 169,
-			"cure": 149,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "8",
+			"confirm": "318",
+			"isolation": "169",
+			"cure": "149",
+			"death": "0"
 		},
 		{
 			"city": "광주",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 32,
-			"isolation": 2,
-			"cure": 30,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "32",
+			"isolation": "2",
+			"cure": "30",
+			"death": "0"
 		},
 		{
 			"city": "대전",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 46,
-			"isolation": 2,
-			"cure": 43,
-			"death": 1
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "46",
+			"isolation": "2",
+			"cure": "43",
+			"death": "1"
 		},
 		{
 			"city": "울산",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 53,
-			"isolation": 5,
-			"cure": 47,
-			"death": 1
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "53",
+			"isolation": "5",
+			"cure": "47",
+			"death": "1"
 		},
 		{
 			"city": "세종",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 47,
-			"isolation": 0,
-			"cure": 47,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "47",
+			"isolation": "0",
+			"cure": "47",
+			"death": "0"
 		},
 		{
 			"city": "경기",
-			"new_confirm_f_d": 2,
-			"new_confirm_f_o": 8,
-			"confirm": 1045,
-			"isolation": 310,
-			"cure": 713,
-			"death": 22
+			"new_confirm_f_d": "2",
+			"new_confirm_f_o": "8",
+			"confirm": "1,045",
+			"isolation": "310",
+			"cure": "713",
+			"death": "22"
 		},
 		{
 			"city": "강원",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 60,
-			"isolation": 5,
-			"cure": 52,
-			"death": 3
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "60",
+			"isolation": "5",
+			"cure": "52",
+			"death": "3"
 		},
 		{
 			"city": "충북",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 61,
-			"isolation": 9,
-			"cure": 52,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "61",
+			"isolation": "9",
+			"cure": "52",
+			"death": "0"
 		},
 		{
 			"city": "충남",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 2,
-			"confirm": 152,
-			"isolation": 8,
-			"cure": 144,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "2",
+			"confirm": "152",
+			"isolation": "8",
+			"cure": "144",
+			"death": "0"
 		},
 		{
 			"city": "전북",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 21,
-			"isolation": 2,
-			"cure": 19,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "21",
+			"isolation": "2",
+			"cure": "19",
+			"death": "0"
 		},
 		{
 			"city": "전남",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 20,
-			"isolation": 2,
-			"cure": 18,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "20",
+			"isolation": "2",
+			"cure": "18",
+			"death": "0"
 		},
 		{
 			"city": "경북",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 1383,
-			"isolation": 16,
-			"cure": 1313,
-			"death": 54
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "1,383",
+			"isolation": "16",
+			"cure": "1,313",
+			"death": "54"
 		},
 		{
 			"city": "경남",
-			"new_confirm_f_d": 3,
-			"new_confirm_f_o": 0,
-			"confirm": 130,
-			"isolation": 6,
-			"cure": 124,
-			"death": 0
+			"new_confirm_f_d": "3",
+			"new_confirm_f_o": "0",
+			"confirm": "130",
+			"isolation": "6",
+			"cure": "124",
+			"death": "0"
 		},
 		{
 			"city": "제주",
-			"new_confirm_f_d": 0,
-			"new_confirm_f_o": 0,
-			"confirm": 15,
-			"isolation": 0,
-			"cure": 15,
-			"death": 0
+			"new_confirm_f_d": "0",
+			"new_confirm_f_o": "0",
+			"confirm": "15",
+			"isolation": "0",
+			"cure": "15",
+			"death": "0"
 		},
 		{
 			"city": "검역",
-			"new_confirm_f_d": 7,
-			"new_confirm_f_o": 0,
-			"confirm": 577,
-			"isolation": 111,
-			"cure": 466,
-			"death": 0
+			"new_confirm_f_d": "7",
+			"new_confirm_f_o": "0",
+			"confirm": "577",
+			"isolation": "111",
+			"cure": "466",
+			"death": "0"
 		}
 	],
 	"news": [
+		{
+			"author": "대한민국정부",
+			"title": "[카드뉴스] 중앙방역대책본부 일일 국내발생현황 브리핑(6.15)",
+			"link": "http://ncov.mohw.go.kr//tcmBoardView.do?ncvContSeq=2726&contSeq=2726&board_id=&gubun=ALL"
+		},
+		{
+			"author": "보건산업정책과",
+			"title": "김강립 차관, 코로나19 항체 치료제 개발 기업 현장방문",
+			"link": "http://ncov.mohw.go.kr//tcmBoardView.do?ncvContSeq=355011&contSeq=355011&board_id=&gubun=ALL"
+		},
+		{
+			"author": "중앙방역대책본부",
+			"title": "코로나바이러스감염증-19 국내 발생 현황 (6월 15일)",
+			"link": "http://ncov.mohw.go.kr//tcmBoardView.do?ncvContSeq=355009&contSeq=355009&board_id=&gubun=ALL"
+		},
 		{
 			"author": "대한민국정부",
 			"title": "[카드뉴스] 중앙방역대책본부 일일 국내발생현황 브리핑(6.13)",
@@ -220,21 +239,6 @@
 			"author": "중앙방역대책본부",
 			"title": "코로나바이러스감염증-19 국내 발생 현황 (6월 14일 0시)",
 			"link": "http://ncov.mohw.go.kr//tcmBoardView.do?ncvContSeq=354997&contSeq=354997&board_id=&gubun=ALL"
-		},
-		{
-			"author": "위기대응생물테러총괄과",
-			"title": "코로나바이러스감염증-19 국내 발생 현황 (6월 13일 정례브리핑)",
-			"link": "http://ncov.mohw.go.kr//tcmBoardView.do?ncvContSeq=354995&contSeq=354995&board_id=&gubun=ALL"
-		},
-		{
-			"author": "위기대응생물테러총괄과",
-			"title": "코로나바이러스감염증-19 국내 발생 현황 (6월 13일 0시)",
-			"link": "http://ncov.mohw.go.kr//tcmBoardView.do?ncvContSeq=354994&contSeq=354994&board_id=&gubun=ALL"
-		},
-		{
-			"author": "보건복지부",
-			"title": "수도권 상황이 안정화될 때까지 방역강화 조치 연장 및 추가 방역조치를 시행합니다.",
-			"link": "http://ncov.mohw.go.kr//tcmBoardView.do?ncvContSeq=2704&contSeq=2704&board_id=&gubun=ALL"
 		}
 	]
 }
