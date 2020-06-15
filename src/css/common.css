@@ -98,3 +98,17 @@ html {
 	padding: 15px 0;
     margin-top: 20px;
 }
+
+.badge-box{
+    padding-bottom: 1.5rem;
+}
+.badge{
+    font-size: 14px;
+    float: left;
+}
+
+.badge-desc{
+    float: left;
+    margin-left: 5px;
+    color: #686868;
+}
