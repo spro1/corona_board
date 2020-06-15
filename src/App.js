@@ -22,7 +22,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-         fetch("http://119.207.250.212:8080/corona")
+         fetch("https://119.207.250.212:8080/corona")
              .then(res => res.json())
              .then(
                  (result) => {

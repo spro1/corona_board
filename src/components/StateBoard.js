@@ -48,7 +48,9 @@ export default class Main extends Component{
                 <Row className="corona-header">
                         <Col xs={12} md={8} className="corona-logo">
                             <h1><img src={Logo}/> COVID-19</h1>
-                            <p className="corona-logo-desc">COVID-19 국내 현황판 (source : <a href="http://ncov.mohw.go.kr/">http://ncov.mohw.go.kr/</a>)</p>
+                            <p className="corona-logo-desc">COVID-19 국내 현황판 (source : <a href="http://ncov.mohw.go.kr/">http://ncov.mohw.go.kr/</a>)
+                            (<a href="https://spro1.github.io/study_react/">COVID-19 세계 현황판 바로가기</a>)
+                            </p>
                             <p className="corona-logo-desc">데이터 업데이트 시간 : {this.props.Update}</p>
                             <CoronaJson CoronaData={this.props.CoronaData}></CoronaJson>
                         </Col>

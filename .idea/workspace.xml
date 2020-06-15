@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b619a92a-b694-4648-b2b5-cb7d7cd58dc1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CityTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CityTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewsBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsBoard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StateBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StateBoard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592074021693</updated>
       <workItem from="1592074025694" duration="11751000" />
-      <workItem from="1592194632348" duration="11595000" />
+      <workItem from="1592194632348" duration="12823000" />
     </task>
     <servers />
   </component>
