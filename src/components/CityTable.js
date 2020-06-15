@@ -2,13 +2,10 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import BootstrapTable from 'react-bootstrap-table-next';
-import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit'
 import React, {Component} from "react";
 import City from "../img/city.png";
-import CoronaData from "../data/corona";
 
-const { SearchBar } = Search;
 
 const columns = [{
     dataField: 'city',

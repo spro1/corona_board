@@ -5,7 +5,7 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import News from "../img/news.png";
 
-export default class Section extends Component{
+export default class NewsTable extends Component{
     constructor(props) {
         super(props);
     }
@@ -16,6 +16,9 @@ export default class Section extends Component{
     }
 
     render() {
+        const hover={
+            cursor:"pointer"
+        }
         return (
             <Container className="corona">
                 <hr/>
@@ -36,7 +39,7 @@ export default class Section extends Component{
                         <tbody>
                         {this.props.NewsData.map((item, index)=> (
                         <tr onClick={(e) => this.openURL(item.link)} key={index}>
-                            <td>{item.title}</td>
+                            <td style={hover}>{item.title}</td>
                             <td>{item.author}</td>
                         </tr>
                         ))}

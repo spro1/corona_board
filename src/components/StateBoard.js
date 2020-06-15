@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Container from "react-bootstrap/esm/Container";
+
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Badge from "react-bootstrap/esm/Badge";
@@ -9,7 +10,8 @@ import Confirm from "../img/confirm.png";
 import Cure from "../img/cure.png";
 import Death from "../img/death.png";
 import Isolation from "../img/isolation.png";
-
+import Switch from "react-bootstrap/esm/Switch";
+import CoronaJson from "./CoronaJson";
 function numberFormat(inputNumber) {
    return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -39,12 +41,16 @@ export default class Main extends Component{
         this.props.KoreaData.negative = numberFormat(this.props.KoreaData.negative);
         this.props.KoreaData.complete = numberFormat(this.props.KoreaData.complete);
         this.props.KoreaData.testing = numberFormat(this.props.KoreaData.testing);
+
+        console.log(this.props.CoronaJson);
         return (
             <Container className="corona">
                 <Row className="corona-header">
                         <Col xs={12} md={8} className="corona-logo">
                             <h1><img src={Logo}/> COVID-19</h1>
                             <p className="corona-logo-desc">COVID-19 국내 현황판 (source : <a href="http://ncov.mohw.go.kr/">http://ncov.mohw.go.kr/</a>)</p>
+                            <p className="corona-logo-desc">데이터 업데이트 시간 : {this.props.Update}</p>
+                            <CoronaJson CoronaData={this.props.CoronaData}></CoronaJson>
                         </Col>
                 </Row>
                 <Row className="corona-content">
