@@ -21,27 +21,23 @@ class App extends Component {
         }
     }
 
-    componentDidMount() {
-         fetch("https://119.207.250.212:8080/corona")
-             .then(res => res.json())
-             .then(
-                 (result) => {
-                     this.setState({
+    async componentDidMount() {
+        try{
+            const response = await fetch("https://119.207.250.212:8080/corona");
+            const json= await response.json();
+            this.setState({
                          isLoaded: true,
-                         CoronaData : result,
-                         NewsData : result.news,
-                         KoreaData : result.confirm_status,
-                         CityData : result.city_status,
-                         Datetime : result.datetime
+                         CoronaData : json,
+                         NewsData : json.news,
+                         KoreaData : json.confirm_status,
+                         CityData : json.city_status,
+                         Datetime : json.datetime
                      });
-                 },
-                 (error) => {
-                     this.setState({
-                         isLoaded: true,
-                         error
-                     });
-                 }
-             )
+                 } catch(error){
+                    this.setState({
+                        isLoaded: false
+                    })
+            }
         }
 
     render() {
