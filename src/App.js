@@ -23,7 +23,7 @@ class App extends Component {
 
     async componentDidMount() {
         try{
-            const response = await fetch("https://119.207.250.212:8080/corona");
+            const response = await fetch("https://rssenjoy.com/corona");
             const json= await response.json();
             this.setState({
                          isLoaded: true,
