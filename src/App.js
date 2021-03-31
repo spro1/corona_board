@@ -23,7 +23,7 @@ class App extends Component {
 
     async componentDidMount() {
         try{
-            const response = await fetch("https://rssenjoy.com/corona");
+            const response = await fetch("https://bboookk.com/post");
             const json= await response.json();
             this.setState({
                          isLoaded: true,
